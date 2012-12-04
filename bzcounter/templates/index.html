@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>MBC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.1.0.js"></script>
+    <script src="/static/js/app.js"></script>
+</head>
+<body>
+    <div data-bind="foreach: tipples">
+        <button type="submit" class="add" data-icon="plus" data-iconpos="right" data-bind="attr: {id: id}" >
+            <span data-bind="{text: name}"></span>
+        </button>
+    </div>
+    <button id="done" type="submit" data-icon="check" data-iconpos="right">Done</button>
+</body>
+</html>
